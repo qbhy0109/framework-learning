@@ -17,6 +17,22 @@ public class User {
 	
 	public User() {		
 	}
+
+	public User(String username, String pwd){
+		this.username = username;
+		this.password = pwd;
+	}
+
+	public User(Long id, String username, String pwd, String nickname, String email, String image, Date d1, Date d2){
+		this.id=id;
+		this.username=username;
+		this.password=pwd;
+		this.nickname=nickname;
+		this.email=email;
+		this.image=image;
+		this.createTime=d1;
+		this.updateTime=d2;
+	}
 	
 	public Long getId() {
 		return id;
@@ -34,19 +50,19 @@ public class User {
 		this.username = username;
 	}
 	
-	public String getPassWord() {
+	public String getPassword() {
 		return this.password;
 	}
 	
-	public void setPassWord(String password) {
+	public void setPassword(String password) {
 		this.password = password;
 	}
 	
-	public String getNickName() {
+	public String getNickname() {
 		return this.nickname;
 	}
 	
-	public void setNickName(String nickname) {
+	public void setNickname(String nickname) {
 		this.nickname = nickname;
 	}
 	

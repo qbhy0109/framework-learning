@@ -8,8 +8,8 @@
     </parent>
 
     <modelVersion>4.0.0</modelVersion>
-    <groupId>com.itranswarp.learnjava</groupId>
-    <artifactId>springboot-hello</artifactId>
+    <groupId>com.yb</groupId>
+    <artifactId>blog-try01</artifactId>
     <version>1.0-SNAPSHOT</version>
 
     <properties>
@@ -34,11 +34,11 @@
             <artifactId>spring-boot-starter-jdbc</artifactId>
         </dependency>
         
-        <dependency>
+        <!-- <dependency>
 			<groupId>io.pebbletemplates</groupId>
 			<artifactId>pebble-spring-boot-2-starter</artifactId>
 			<version>3.0.5</version>
-		</dependency>
+		</dependency> -->
 
         <!-- 集成Pebble View -->
         <dependency>

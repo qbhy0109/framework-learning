@@ -8,18 +8,57 @@
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
 		<link rel="stylesheet" href="../static/css/me.css" th:href="@{/css/me.css}" /> -->
 		<title>博客</title>
+        <style>
+            #container{
+                margin:0 auto;
+
+                background-color:#eeeeee;
+            }
+<!--            #submit-->
+<!--            {-->
+<!--                text-align:center;-->
+<!--            }-->
+
+        </style>
 	</head>
     <body>
-        <h2>{{testBlog.getId}}</h2>
-        <h2>{{testBlog.getTitle}}</h2>
-        <h2>{{testBlog.getImage}}</h2>
-        <h2>{{testBlog.getViews}}</h2>
-        <h2>{{testBlog.getCommentCount}}</h2>
-        <h2>{{testBlog.getUpdateTime}}</h2>
-        <h2>{{testBlog.getCreateTime}}</h2>
-        <h2>{{testBlog.getDescription}}</h2>
-        <h2>{{testBlog.getUser}}</h2>
+
+        <div id="container" style="width:1000px;">
+            <div id="header" style="background-color:#999999;" align="center">
+                <h1 style="margin-bottom:0;">this is a test</h1>
+            </div>
+
+            <div id="submit" style="height:200;width:1000px;">
+                <form action="/signin" method="post" id="signinForm">
+                    <div class="form-group">
+                        <center>sign in</center>
+                    </div>
+                    <div class="form-group">
+                        <label>Username</label>
+                        <input name="username" type="text" class="form-control" placeholder="Username">
+                    </div>
+                    <div class="form-group">
+                        <label>Password</label>
+                        <input name="password" type="password" class="form-control" placeholder="Password">
+                    </div>
+                    <button type="submit" class="btn btn-outline-primary">Submit</button>
+                </form>
+            </div>
+
+            <div id="menu" style="background-color:#cccccc;height:400px;width:300px;float:left;margin-bottom:0;">
+                <h3 style="">the user is {{ user }}</h3>
+            </div>
+
+            <div id="content" style="background-color:#aaaaaa;height:400px;width:700px;
+                    float:right;margin-bottom:0;">
+                {% for blog in allBlog %}
+                <h2>{{blog.getTitle}}: {{blog.getDescription}}</h2>
+                {% endfor %}
+            </div>
+
+
+
+        </div>
 
     </body>
-
 </html>
