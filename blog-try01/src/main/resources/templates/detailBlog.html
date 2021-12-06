@@ -1,0 +1,17 @@
+{% extends "base" %}
+
+{% block main %}
+<div id="titleAndAuthor" style="width:1000px:background-color:#eeeeee;" align="center">
+    <h2>{{article.title}}</h2>
+    <span>作者：{{article.author}}</span>&nbsp&nbsp&nbsp
+    <span>浏览：{{article.views}}</span>&nbsp&nbsp&nbsp
+    <span>浏览：{{article.createTime}}</span>&nbsp&nbsp&nbsp
+    {% if article.author == user %}
+    <a href="/deleteBlog/{{article.getId}}">删除</a>
+    {% endif %}
+</div>
+<div id="context" style="width:1000px;">
+    &nbsp&nbsp&nbsp&nbsp{{article.context}}
+</div>
+
+{% endblock %}

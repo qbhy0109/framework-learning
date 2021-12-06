@@ -12,7 +12,7 @@ public class User {
 	private String email;
 	private String image;
 	private Date createTime;
-	private Date updateTime;
+	private Date updateTime = new Date();
 //	private Integer type;
 	
 	public User() {		

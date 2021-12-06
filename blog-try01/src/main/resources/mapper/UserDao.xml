@@ -18,13 +18,17 @@
     <select id="getUserById" resultMap="User">
         select * from bloguser where id=#{id}
     </select>
+
+    <select id="getUserByName" resultMap="User">
+        select * from bloguser where username=#{username}
+    </select>
     
     <select id="checkUser" resultType="int">
         select count(*) from bloguser where username=#{username}
     </select>
     
     <insert id="newUser">
-        insert into bloguser (username, pwd) values (#{user.getUsername()},#{user.getPassword()})
+        insert into bloguser (username, pwd) values (#{username}, #{password})
     </insert>
 
 

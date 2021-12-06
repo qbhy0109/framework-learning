@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>博客</title>
+    <style>
+            #container{
+                margin:0 auto;
+
+                background-color:#eeeeee;
+            }
+        </style>
+</head>
+<body>
+
+<div id="container" style="width:1000px;">
+    <div id="header" style="background-color:#999999;" align="center">
+        <h1 style="margin-bottom:0;">this is a test</h1>
+    </div>
+
+    <div id="welcome" style="height:200;width:1000px;">
+        <h3 style="margin-bottom:0;" align="center" >Hello, {{ user.username }}!</h3>
+    </div>
+
+    <div id="menu" style="background-color:#cccccc;height:400px;width:400px;float:left;margin-bottom:0;">
+        <h3>this is a test</h3>
+    </div>
+
+    <div id="content" style="background-color:#aaaaaa;height:400px;width:600px;
+                    float:right;margin-bottom:0;" align="center">
+    </div>
+    <a href="/">返回首页</a>
+</div>
+
+</body>
+</html>
+
+
+
+<!DOCTYPE html>
+<html xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>博客</title>
+    <style>
+            #container{
+                margin:0 auto;
+                background-color:#eeeeee;
+            }
+        </style>
+</head>
+<body>
+
+<div id="container" style="width:1000px;">
+    <div id="header" style="background-color:#999999;" align="center">
+        <h1 style="margin-bottom:0;">Welcome !
+            {%if user!=null%}{{user.username}}{%endif%}
+        </h1>
+    </div>
+
+    <lable id="content" style="background-color:#aaa;height:50px;width:1000px;float:left;margin-bottom:0;">
+        <h3>create an article</h3>
+    </lable>
+    <form action="/createblog" method="post" id="createForm">
+        <center>
+            title: <input name="title" style="height:30px;width=400px;">
+        </center>
+
+        <input id="content" style="height:200px;width:1000px">
+        <center>
+            <button type="submit" class="btn btn-outline-primary">Submit</button>
+        </center>
+
+    </form>
+
+
+
+    <a href="/">返回首页</a>
+</div>
+
+</body>
+</html>
+
+

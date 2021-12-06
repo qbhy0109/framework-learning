@@ -16,23 +16,33 @@ public class BlogServiceImpl implements BlogService {
 	private BlogDao blogDao;
 	
 	@Override
-	public IndexBlog getBlogById(Long id) {
+	public Blog getBlogById(Long id) {
 		return blogDao.getBlogById(id);
 	}
 	
 	@Override
-	public List<IndexBlog> getAllBlog(){
+	public List<Blog> getAllBlog(){
 		return blogDao.getAllBlog();
+	}
+
+	@Override
+	public void createBlog(Blog blog){
+		blogDao.createBlog(blog);
 	}
 	
 	@Override
 	public void saveBlog(Blog blog) {
 		blogDao.saveBlog(blog);
 	}
+
+	@Override
+	public void viewsAdd(Long id){
+		blogDao.viewsAdd(id);
+	}
 	
 	@Override
-	public void deleteBlog(Long id) {
-		blogDao.deleteBlog(id);
+	public void deleteBlogById(Long id) {
+		blogDao.deleteBlogById(id);
 	}
 	
 }

@@ -1,64 +1,35 @@
-<!DOCTYPE html>
-<html xmlns:th="http://www.w3.org/1999/xhtml">
-    <head>
-		<meta charset="utf-8" />
-		<!--移动端的预览设置-->
-		<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0" /> -->
-		<!-- <link href="../static/images/favicon.ico" th:href="@{/images/me.png}" rel="icon" type="image/x-ico">
-		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
-		<link rel="stylesheet" href="../static/css/me.css" th:href="@{/css/me.css}" /> -->
-		<title>博客</title>
-        <style>
-            #container{
-                margin:0 auto;
+{% extends "base" %}
 
-                background-color:#eeeeee;
-            }
-<!--            #submit-->
-<!--            {-->
-<!--                text-align:center;-->
-<!--            }-->
+{% block main %}
+<!--<div id="header" style="background-color:#999999;" align="center">-->
+<!--    <h1 style="margin-top:0;margin-bottom:0;">Welcome {{user}}!</h1>-->
+<!--</div>-->
 
-        </style>
-	</head>
-    <body>
+<!--<div id="content" style="background-color:#aaaaaa;width:700px;-->
+<!--                    float:right;margin-bottom:0;">-->
+<!--    {% for blog in allBlog %}-->
+<!--    <h2>{{blog.getTitle}}: {{blog.getContext}}</h2>-->
+<!--    {% endfor %}-->
+<!--</div>-->
 
-        <div id="container" style="width:1000px;">
-            <div id="header" style="background-color:#999999;" align="center">
-                <h1 style="margin-bottom:0;">this is a test</h1>
-            </div>
-
-            <div id="submit" style="height:200;width:1000px;">
-                <form action="/signin" method="post" id="signinForm">
-                    <div class="form-group">
-                        <center>sign in</center>
-                    </div>
-                    <div class="form-group">
-                        <label>Username</label>
-                        <input name="username" type="text" class="form-control" placeholder="Username">
-                    </div>
-                    <div class="form-group">
-                        <label>Password</label>
-                        <input name="password" type="password" class="form-control" placeholder="Password">
-                    </div>
-                    <button type="submit" class="btn btn-outline-primary">Submit</button>
-                </form>
-            </div>
-
-            <div id="menu" style="background-color:#cccccc;height:400px;width:300px;float:left;margin-bottom:0;">
-                <h3 style="">the user is {{ user }}</h3>
-            </div>
-
-            <div id="content" style="background-color:#aaaaaa;height:400px;width:700px;
-                    float:right;margin-bottom:0;">
-                {% for blog in allBlog %}
-                <h2>{{blog.getTitle}}: {{blog.getDescription}}</h2>
-                {% endfor %}
-            </div>
+<table border="0" width="1000px">
+    <tbody>
+        <tr bgcolor="#999999">
+            <td width="150">时间</td>
+            <td width="100">作者</td>
+            <td width="600">标题</td>
+            <td width="100">浏览</td>
+        </tr>
+        {% for blog in allBlog %}
+        <tr bgcolor="#bbbbbb">
+            <td width="150">{{blog.getCreateTime}}</td>
+            <td width="100">{{blog.getAuthor}}</td>
+            <td width="600"><a href="/detailBlog/{{blog.getId}}" target="_blank">{{blog.getTitle}}</a></td>
+            <td width="100">{{blog.getViews}}</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
 
 
-
-        </div>
-
-    </body>
-</html>
+{% endblock %}

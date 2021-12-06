@@ -6,10 +6,11 @@ import java.util.Date;
 
 public class Blog {
 	
-	private Long 	userId;
+//	private Long 	userId;
 	private Long	id;
+	private String	author;	//select user_id
 	private String 	title;
-	private String 	content;
+	private String 	context;
 	private String 	image;
 	private String 	description;
 	private Integer views;
@@ -18,7 +19,7 @@ public class Blog {
 	private Date	createTime;
 	private Date 	updateTime;
 	
-	private User	user;
+
 	
 //	private boolean published; 		// 是否展示；
 //	private boolean commentable; 	// 可评论
@@ -26,18 +27,25 @@ public class Blog {
 //	private List<Type> type;
 // comment...tag...
 	
-	public Long getUserId() {
-		return this.userId;
-	}
-	public void setUserId(Long userid) {
-		this.userId = userid;
-	}
+//	public Long getUserId() {
+//		return this.userId;
+//	}
+//	public void setUserId(Long userid) {
+//		this.userId = userid;
+//	}
 	
 	public Long getId() {
 		return this.id;
 	}
 	public void setId(Long id) {
 		this.id = id;
+	}
+
+	public String getAuthor() {
+		return this.author;
+	}
+	public void setAuthor(String author) {
+		this.author = author;
 	}
 	
 	public String getTitle() {
@@ -47,11 +55,11 @@ public class Blog {
 		this.title = title;
 	}
 	
-	public String getContent() {
-		return this.content;
+	public String getContext() {
+		return this.context;
 	}
-	public void setContent(String content) {
-		this.content = content;
+	public void setContext(String context) {
+		this.context = context;
 	}
 	
 	public String getImage() {
@@ -84,9 +92,9 @@ public class Blog {
 	public Date getCreateTime() {
 		return this.createTime;
 	}
-//	public void setCreateTime(Date time) {
-//		this.createTime = time;
-//	}
+	public void setCreateTime(Date time) {
+		this.createTime = time;
+	}
 	
 	public Date getUpdateTime() {
 		return this.updateTime;
@@ -94,13 +102,7 @@ public class Blog {
 	public void setUpdateTime(Date time) {
 		this.updateTime = time;
 	}
-	
-	public User getUser() {
-		return this.user;
-	}
-	public void setUser(User user) {
-		this.user = user;
-	}
+
 	
 }
 

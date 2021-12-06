@@ -11,13 +11,17 @@ import java.util.List;
 @Repository
 public interface BlogDao {
 	
-	IndexBlog getBlogById(Long id);
+	Blog getBlogById(Long id);
 	
-	List<IndexBlog> getAllBlog();
+	List<Blog> getAllBlog();
+
+	void createBlog(Blog blog);
 	
 	void saveBlog(Blog blog);
+
+	void viewsAdd(Long id);
 	
-	void deleteBlog(Long id);
+	void deleteBlogById(Long id);
 }
 
 

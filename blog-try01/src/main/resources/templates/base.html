@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+         #container{
+                margin:0 auto;
+<!--                background-color:#eeeeee;-->
+            }
+    </style>
+</head>
+<body>
+<div id="container" style="width:1000px;">
+    <div id="d" style="background-color:#eeeeee;" align="center">
+        <h2 style="margin-bottom:0;">
+            <a href="/">Home</a>
+            <a href="/register">Register</a>
+            <a href="/signIn">Sign In</a>
+            <a href="/signOut">Sign Out</a>
+            <a href="/createBlog">Write</a>
+            <a href="/"></a>
+
+        </h2>
+    </div>
+    {% block main %}
+    {% endblock %}
+
+</div>
+</body>
+</html>

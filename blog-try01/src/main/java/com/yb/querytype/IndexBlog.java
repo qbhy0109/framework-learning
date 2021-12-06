@@ -7,18 +7,21 @@ import java.util.Date;
 public class IndexBlog {
 
 	private Long id;//博客编号
+    private String user;
     private String title;//博客标题
+    private String context;
     private String image;//博客首图
+    private String description;//博客描述
     private Integer views;//浏览次数
     private Integer commentCount;//评论个数
     private Date updateTime;//更新时间
     private Date createTime;
-    private String description;//博客描述
+
 
     //Type
 //    private String typeName;//类型名
     //User
-    private String user;
+
 //    private User user;
 //    private String nickname;//昵称
 //    private String avatar; //头像
@@ -40,6 +43,14 @@ public class IndexBlog {
 
     public void setTitle(String title) {
         this.title = title;
+    }
+
+    public String getContext() {
+        return context;
+    }
+
+    public void setContext(String context) {
+        this.context = context;
     }
 
     public String getImage() {
