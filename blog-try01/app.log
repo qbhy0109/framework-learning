@@ -2712,3 +2712,78 @@ com.mitchellbosecke.pebble.error.ParserException: Unexpected token of value "}" 
 2021-12-05 23:19:43.651  INFO 16428 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
 2021-12-05 23:19:43.655  INFO 16428 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
 2021-12-05 23:19:43.681  INFO 16428 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-12-06 22:49:21.245  INFO 10844 --- [main] com.yb.ApplicationStart                  : Starting ApplicationStart on BORUI-PC with PID 10844 (D:\WorkSpace\JAVA\learning\blog-try01\target\classes started by borui in D:\WorkSpace\JAVA\learning\blog-try01)
+2021-12-06 22:49:21.250  INFO 10844 --- [main] com.yb.ApplicationStart                  : No active profile set, falling back to default profiles: default
+2021-12-06 22:49:22.925  INFO 10844 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-12-06 22:49:22.942  INFO 10844 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-12-06 22:49:22.943  INFO 10844 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.35]
+2021-12-06 22:49:23.107  INFO 10844 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-12-06 22:49:23.107  INFO 10844 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1784 ms
+2021-12-06 22:49:23.860  INFO 10844 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-12-06 22:49:23.944  INFO 10844 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-12-06 22:49:24.254  INFO 10844 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-12-06 22:49:24.262  INFO 10844 --- [main] com.yb.ApplicationStart                  : Started ApplicationStart in 4.053 seconds (JVM running for 5.697)
+2021-12-06 22:49:27.585  INFO 10844 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-12-06 22:49:27.585  INFO 10844 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-12-06 22:49:27.593  INFO 10844 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 8 ms
+2021-12-06 22:49:27.660  WARN 10844 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariConfig           : HikariPool-1 - idleTimeout is close to or more than maxLifetime, disabling it.
+2021-12-06 22:49:27.661  INFO 10844 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-12-06 22:49:27.884  INFO 10844 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-12-06 22:50:24.941  INFO 10844 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-12-06 22:50:24.944  INFO 10844 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-12-06 22:50:24.970  INFO 10844 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-12-06 22:52:38.947  INFO 12876 --- [main] com.yb.ApplicationStart                  : Starting ApplicationStart on BORUI-PC with PID 12876 (D:\WorkSpace\JAVA\learning\blog-try01\target\classes started by borui in D:\WorkSpace\JAVA\learning\blog-try01)
+2021-12-06 22:52:38.952  INFO 12876 --- [main] com.yb.ApplicationStart                  : No active profile set, falling back to default profiles: default
+2021-12-06 22:52:40.718  INFO 12876 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-12-06 22:52:40.731  INFO 12876 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-12-06 22:52:40.731  INFO 12876 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.35]
+2021-12-06 22:52:40.843  INFO 12876 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-12-06 22:52:40.844  INFO 12876 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1825 ms
+2021-12-06 22:52:41.408  INFO 12876 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-12-06 22:52:41.499  INFO 12876 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-12-06 22:52:41.767  INFO 12876 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-12-06 22:52:41.781  INFO 12876 --- [main] com.yb.ApplicationStart                  : Started ApplicationStart in 4.978 seconds (JVM running for 5.745)
+2021-12-06 22:52:52.827  INFO 12876 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-12-06 22:52:52.828  INFO 12876 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-12-06 22:52:52.835  INFO 12876 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 7 ms
+2021-12-06 22:52:52.892  WARN 12876 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariConfig           : HikariPool-1 - idleTimeout is close to or more than maxLifetime, disabling it.
+2021-12-06 22:52:52.893  INFO 12876 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-12-06 22:52:53.210  INFO 12876 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-12-06 22:53:23.526  INFO 12876 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-12-06 22:53:23.530  INFO 12876 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-12-06 22:53:23.543  INFO 12876 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-12-06 23:15:59.793  INFO 8148 --- [main] com.yb.ApplicationStart                  : Starting ApplicationStart on BORUI-PC with PID 8148 (D:\WorkSpace\JAVA\learning\blog-try01\target\classes started by borui in D:\WorkSpace\JAVA\learning\blog-try01)
+2021-12-06 23:15:59.796  INFO 8148 --- [main] com.yb.ApplicationStart                  : No active profile set, falling back to default profiles: default
+2021-12-06 23:16:02.084  INFO 8148 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-12-06 23:16:02.096  INFO 8148 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-12-06 23:16:02.097  INFO 8148 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.35]
+2021-12-06 23:16:02.295  INFO 8148 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-12-06 23:16:02.296  INFO 8148 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2409 ms
+2021-12-06 23:16:02.983  INFO 8148 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-12-06 23:16:03.074  INFO 8148 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-12-06 23:16:03.399  INFO 8148 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-12-06 23:16:03.410  INFO 8148 --- [main] com.yb.ApplicationStart                  : Started ApplicationStart in 4.776 seconds (JVM running for 6.218)
+2021-12-06 23:16:16.611  INFO 8148 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-12-06 23:16:16.612  INFO 8148 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-12-06 23:16:16.618  INFO 8148 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 6 ms
+2021-12-06 23:16:16.682  WARN 8148 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariConfig           : HikariPool-1 - idleTimeout is close to or more than maxLifetime, disabling it.
+2021-12-06 23:16:16.683  INFO 8148 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-12-06 23:16:16.860  INFO 8148 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-12-06 23:17:22.156  INFO 8148 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-12-06 23:17:22.156  INFO 8148 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-12-06 23:17:22.159  INFO 8148 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-12-06 23:21:24.278  INFO 11056 --- [main] com.yb.ApplicationStart                  : Starting ApplicationStart on BORUI-PC with PID 11056 (D:\WorkSpace\JAVA\learning\blog-try01\target\classes started by borui in D:\WorkSpace\JAVA\learning\blog-try01)
+2021-12-06 23:21:24.281  INFO 11056 --- [main] com.yb.ApplicationStart                  : No active profile set, falling back to default profiles: default
+2021-12-06 23:21:26.353  INFO 11056 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-12-06 23:21:26.365  INFO 11056 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-12-06 23:21:26.366  INFO 11056 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.35]
+2021-12-06 23:21:26.508  INFO 11056 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-12-06 23:21:26.508  INFO 11056 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2171 ms
+2021-12-06 23:21:27.034  INFO 11056 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-12-06 23:21:27.111  INFO 11056 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-12-06 23:21:27.354  INFO 11056 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-12-06 23:21:27.366  INFO 11056 --- [main] com.yb.ApplicationStart                  : Started ApplicationStart in 4.097 seconds (JVM running for 4.668)
+2021-12-06 23:21:35.920  INFO 11056 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-12-06 23:21:35.920  INFO 11056 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-12-06 23:21:35.928  INFO 11056 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 8 ms
+2021-12-06 23:22:33.355  INFO 11056 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'

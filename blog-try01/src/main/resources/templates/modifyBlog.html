@@ -1,0 +1,28 @@
+{% extends "base" %}
+
+{% block main %}
+<form>
+    <div id="context" style="width:1000px;">
+        <table border="0">
+            <tr>
+                <div style="1000px;">
+                    <td width="200">title:</td>
+                    <td>
+                        <textarea style="800px;">{{article.title}}</textarea>
+                    </td>
+
+                </div>
+            </tr>
+            <tr>
+                <td width="1000">
+                    <div style="1000px;">
+                        <textarea style="1000px;">&nbsp&nbsp{{article.context}}不是吧</textarea>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </div>
+</form>
+
+
+{% endblock %}

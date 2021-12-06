@@ -19,6 +19,6 @@ public class UserServiceImpl implements UserService {
     @Override
     public User checkUser(String username, String password) {
         //通过MD5将传过来的密码进行加密操作，然后再根据加盐后的密码进行查询
-        return userDao.findUsernameAndPassword(username, MD5Utils.code(password));
+        return userDao.findUsernameAndPassword(username, password);
     }
 }

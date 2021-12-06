@@ -81,4 +81,23 @@ public class BlogController {
         System.out.println("no:"+user+"  "+blog.getAuthor()+":"+"redirect:/detailBlog/"+id);
         return "redirect:/detailBlog/"+id;
     }
+
+    @GetMapping("/modifyBlog/{articleId}")
+    public String getModify(@PathVariable("articleId") Long id){
+        return "modifyBlog";
+    }
+
+    @PostMapping("modifyBlog/{articleId}")
+    public String postModify(@PathVariable("articleId") Long id, @RequestParam("title") String title,
+                             @RequestParam("context") String context, HttpSession session, Model model){
+        String user = (String)session.getAttribute("username");
+        Blog article = blogService.getBlogById(id);
+        if(article!=null&&user!=null&&user.equals(article.getAuthor())){
+            article.setTitle(title);
+            article.setContext(context);
+            blogService.saveBlog(article);
+            model.addAttribute("article", article);
+        }
+        return "/detailBlog/"+id;
+    }
 }
